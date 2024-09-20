@@ -14,7 +14,7 @@ let productSchema = new mongoose.Schema({
 const productModel = mongoose.model('products', productSchema);
 
 const app = express();
-// app.use(cors());
+
 app.use(express.json());
 
 const port = process.env.PORT || 5001;
